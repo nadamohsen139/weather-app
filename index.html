@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="output.css">
+    <script src="main.js" defer></script>
+    <title>weather-app</title>
+</head>
+<body>
+    <div class="w-5/6 max-w-lg py-10 mx-auto mt-24 mb-0 text-center text-white shadow-md px-9 card bg-gradient-to-r from-sky-500 to-indigo-500 rounded-2xl">
+        <div class="flex items-center justify-between w-full search">
+            <input type="text" placeholder="enter city name" spellcheck="false" class="flex-1 h-16 px-6 py-2 mr-4 text-lg text-gray-400 border-0 outline-0 rounded-3xl">
+            <button class="bg-white border-0 rounded-full outline-0 w-14 h-14"><div class="flex items-center justify-center img-hold">
+                <img src="images/search.png" class="w-5">
+            </div></button>
+        </div>
+        <div class="hidden error">
+            <p>invalid city name</p>
+        </div>
+        <div class="hidden text-5xl font-bold text-center weather">
+            <div class="flex items-center justify-center img-hold">
+                <img src="images/clouds.png" class="weather-icon">
+            </div>
+            <h1 class="temp">20°C</h1>
+            <h2 class="city">Egypt</h2>
+        </div>
+        <div class="hidden details">
+            <div class="flex items-center justify-between w-full px-5 py-0">
+                <div class="flex items-center justify-between col">
+                    <img src="images/humidity.png" alt="">
+                    <div class="info">
+                        <p class="font-bold humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between col">
+                    <img src="images/wind.png" alt="">
+                    <div class="info">
+                        <p class="font-bold wind">24 Km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
